@@ -9,8 +9,8 @@ public class SqMaxTest {
     @Test
     public void whenFirstMax() {
         SqMax sqMax = new SqMax();
-        int result = sqMax.max(5, 4, 2, 3);
-        assertThat(result, is(5));
+        int result = sqMax.max(5, 4, 8, 3);
+        assertThat(result, is(8));
     }
 
     @Test
