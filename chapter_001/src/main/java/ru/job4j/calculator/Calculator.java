@@ -1,27 +1,37 @@
 package ru.job4j.calculator;
 
+/**
+ * Calculator.
+ *
+ * @author Evgeniya Tyunkova (tynek@mail.ru).
+ */
 public class Calculator {
 
     public static void add(int first, int second) {
-        int result =  first + second;
+        int result = first + second;
         System.out.println(first + " + " + second + " = " + result);
     }
 
     public static void div(int first, int second) {
-        int result2 =  first / second;
+        int result2 = first / second;
         System.out.println(first + " / " + second + " = " + result2);
     }
 
     public static void multiply(int first, int second) {
-        int result3 =  first * second;
+        int result3 = first * second;
         System.out.println(first + " * " + second + " = " + result3);
     }
 
     public static void subtract(int first, int second) {
-        int result4 =  first - second;
+        int result4 = first - second;
         System.out.println(first + " - " + second + " = " + result4);
     }
 
+    /**
+     * Main
+     *
+     * @param args args.
+     */
     public static void main(String[] args) {
         add(1, 1);
         div(4, 2);
