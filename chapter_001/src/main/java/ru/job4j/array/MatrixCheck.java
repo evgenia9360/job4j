@@ -13,7 +13,7 @@ public class MatrixCheck {
                 if (sign == 'X') {
                     count++;
                 }
-                if (sign2 == 'X'){
+                if (sign2 == 'X') {
                     count2++;
                 }
             }

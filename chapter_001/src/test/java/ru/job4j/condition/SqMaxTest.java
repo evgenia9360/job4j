@@ -3,7 +3,7 @@ package ru.job4j.condition;
 import org.junit.Test;
 
 import static org.hamcrest.core.Is.is;
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertThat;
 
 public class SqMaxTest {
     @Test
@@ -16,14 +16,14 @@ public class SqMaxTest {
     @Test
     public void whenSecondMax() {
         SqMax sqMax = new SqMax();
-        int result = sqMax.max(1, 4, 2,3);
+        int result = sqMax.max(1, 4, 2, 3);
         assertThat(result, is(4));
     }
 
     @Test
     public void whenThirdMax() {
         SqMax sqMax = new SqMax();
-        int result = sqMax.max(1, 4, 6,3);
+        int result = sqMax.max(1, 4, 6, 3);
         assertThat(result, is(6));
     }
 

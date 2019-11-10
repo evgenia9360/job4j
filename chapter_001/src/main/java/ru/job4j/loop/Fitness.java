@@ -5,10 +5,10 @@ public class Fitness {
         int month = 0;
         int ivanStrange = ivan;
         int nikStrange = nik;
-        while (ivanStrange < nikStrange){
+        while (ivanStrange < nikStrange) {
             month++;
-            ivanStrange*=3;
-            nikStrange*=2;
+            ivanStrange *= 3;
+            nikStrange *= 2;
         }
         return month;
     }
