@@ -8,17 +8,16 @@ public class MatrixCheck {
             int count2 = 0;
             for (int cell = 0; cell < board.length; cell++) {
                 char sign = board[row][cell];
+                char sign2 = board[cell][row];
                 System.out.print(sign);
                 if (sign == 'X') {
                     count++;
                 }
-            }
-            for (int cell = 0; cell < board.length; cell++) {
-                char sign = board[cell][row];
-                if (sign == 'X') {
+                if (sign2 == 'X'){
                     count2++;
                 }
             }
+
             System.out.println();
             if (count == 5 || count2 == 5) {
                 result = true;
