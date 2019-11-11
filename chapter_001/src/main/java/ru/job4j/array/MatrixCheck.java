@@ -19,7 +19,7 @@ public class MatrixCheck {
             }
 
             System.out.println();
-            if (count == 5 || count2 == 5) {
+            if (count == board.length || count2 == board.length) {
                 result = true;
             }
         }

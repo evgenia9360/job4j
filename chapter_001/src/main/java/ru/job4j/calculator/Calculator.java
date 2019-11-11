@@ -10,7 +10,7 @@ public class Calculator {
     /**
      * Сложение.
      *
-     * @param first первое число.
+     * @param first  первое число.
      * @param second второе число.
      */
     public static void add(int first, int second) {
@@ -21,7 +21,7 @@ public class Calculator {
     /**
      * Деление.
      *
-     * @param first первое число.
+     * @param first  первое число.
      * @param second второе число.
      */
     public static void div(int first, int second) {
@@ -31,7 +31,8 @@ public class Calculator {
 
     /**
      * Умножение.
-     * @param first первое число.
+     *
+     * @param first  первое число.
      * @param second второе число.
      */
     public static void multiply(int first, int second) {
@@ -41,7 +42,8 @@ public class Calculator {
 
     /**
      * Вычитание.
-     * @param first первое число.
+     *
+     * @param first  первое число.
      * @param second второе число.
      */
     public static void subtract(int first, int second) {
