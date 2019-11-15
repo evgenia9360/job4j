@@ -24,4 +24,20 @@ public class TwoArrays {
         }
         return matched;
     }
+
+    public static void intersection2(int first[], int second[]) {
+        for (int itemFirstArray : first) {
+            for (int i : second) {
+                if (itemFirstArray == i) {
+                    System.out.println(itemFirstArray);
+                    break;
+                }
+            }
+        }
+
+    }
+
+    public static void main(String[] args) {
+        intersection2(new int[]{1, 2, 3}, new int[]{2, 3, 4});
+    }
 }
