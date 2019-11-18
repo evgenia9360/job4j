@@ -1,6 +1,15 @@
 package ru.job4j.array;
 
+/**
+ * Дефрагментация.
+ */
 public class Defragment {
+    /**
+     * Переносит значение ячейки массива с пустым значением в конец массива.
+     *
+     * @param array массив.
+     * @return отредактированный массив.
+     */
     public static String[] compress(String[] array) {
         for (int index = 0; index < array.length; index++) {
             String cell = array[index];
@@ -15,14 +24,17 @@ public class Defragment {
                         i++;
                     }
                 }
-                // переместить первую не null ячейку
-                // Здесь нужен цикл while
             }
             System.out.print(array[index] + " ");
         }
         return array;
     }
 
+    /**
+     * Выводит с новой строки в консоль результат проверки метода compress.
+     *
+     * @param args параметры.
+     */
     public static void main(String[] args) {
         String[] input = {"I", null, "wanna", null, "be", null, "compressed"};
         String[] compressed = compress(input);

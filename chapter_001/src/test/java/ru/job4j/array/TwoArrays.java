@@ -27,8 +27,8 @@ public class TwoArrays {
 
     public static void intersection2(int first[], int second[]) {
         for (int itemFirstArray : first) {
-            for (int i : second) {
-                if (itemFirstArray == i) {
+            for (int itemSecondArray : second) {
+                if (itemFirstArray == itemSecondArray) {
                     System.out.println(itemFirstArray);
                     break;
                 }

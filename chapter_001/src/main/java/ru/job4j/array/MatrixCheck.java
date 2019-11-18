@@ -1,7 +1,13 @@
 package ru.job4j.array;
 
+/**
+ * Проверка победителя в игре.
+ */
 public class MatrixCheck {
     public static boolean isWin(char[][] board) {
+        /**
+         * Проходим во вертиколи и горизонтали. Определяем является ли комбинация символов выигрышной.
+         */
         boolean result = false;
         for (int row = 0; row < board.length; row++) {
             int count = 0;
@@ -26,6 +32,11 @@ public class MatrixCheck {
         return result;
     }
 
+    /**
+     * В зависимости от комбинаций, с новой строки выводим в консоль сообщение о победителе.
+     *
+     * @param args параметры.
+     */
     public static void main(String[] args) {
         char[][] hasWinVertical = {
                 {'_', '_', 'X', '_', '_'},
