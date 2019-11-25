@@ -8,10 +8,17 @@ import static java.lang.Math.sqrt;
 public class Point {
     private int x;
     private int y;
+    private int z;
 
     public Point(int first, int second) {
         this.x = first;
         this.y = second;
+    }
+
+    public Point(int x, int y, int z) {
+        this.x = x;
+        this.y = y;
+        this.z = z;
     }
 
     /**
@@ -24,15 +31,7 @@ public class Point {
         return sqrt(Math.pow(this.x - that.x, 2) + Math.pow(this.y - that.y, 2));
     }
 
-    /**
-     * Вывод с новой строки в консоль расстояния - число с плавающей точкой.
-     *
-     * @param args параметры.
-     */
-    public static void main(String[] args) {
-        Point a = new Point(0, 0);
-        Point b = new Point(0, 2);
-        double dist = a.distance(b);
-        System.out.println(dist);
+    public double distance3d(Point that) {
+        return sqrt(Math.pow(this.x - that.x, 2) + Math.pow(this.y - that.y, 2) + Math.pow(this.z - that.z, 2));
     }
 }
